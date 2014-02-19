@@ -1,0 +1,1087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="gb2312">
+<head>
+<title> new document </title>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name="generator" content="editplus" />
+<meta name="author" content="balibell" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<style type="text/css">
+@import url("http://www.51edu.com/zt/res/partifr.css?t=070f241");
+@import url("http://www.51edu.com/zt/res/antcom.css?t=05445");
+</style>
+<script type="text/javascript" src="http://www.51edu.com/zt/res/partifr.js?t=123" ></script>
+</head>
+
+<body >
+<div class="parthead">	
+	<form id="suitform" method="post" action="" target="_blank">
+	文字大小：<select name="fontsize" onchange="autoLineHeight(this)">
+	<option value="" selected>默认</option>
+	<option value="f12" selected style="font-size:12px" >小号</option>
+	<option value="f13" selected style="font-size:12px" >小号(高)</option>
+	<option value="f14" style="font-size:14px" >中号</option>
+	<option value="f16" style="font-size:16px">大号</option>
+	</select>
+	<span class="dn">文字行高：<select name="lineheight">
+	<option value="">默认</option>
+	<option value="lht20" selected>20px</option>
+	<option value="lht23 lht23s">23px</option>
+	<option value="lht23">23px</option>
+	<option value="lht25">25px</option>
+	</select></span>
+	文字颜色：<select name="txtcolor" onchange="autoTxtColor(this)">
+	<option value="" selected>默认</option>	
+	<option value="tblack" style="color:#000;">黑色</option>
+	<option value="tblue" style="color:#003278;">蓝色</option>
+	<option value="tred" style="color:#c80000;">红色</option>
+	<option value="tgray" style="color:#999;">浅灰</option>	
+	<option value="tgray" style="color:#666;">灰色</option>	
+	<option value="tgray" style="color:#333;">深灰</option>	
+	<option value="torange" style="color:#ff7300;">橙色</option>
+	<option value="twhite" style="color:#fff;;background-color:#000">白色</option>	
+	</select>
+	链接颜色：<select name="lnkcolor" onchange="autoLnkColor(this)">
+	<option value="" selected>默认</option>	
+	<option value="black" style="color:#000;">黑色</option>
+	<option value="blue" style="color:#003278;">蓝色</option>
+	<option value="red" style="color:#c80000;">红色</option>
+	<option value="lgray" style="color:#999;">浅灰</option>	
+	<option value="gray" style="color:#666;">灰色</option>
+	<option value="dgray" style="color:#333;">深灰</option>	
+	<option value="orange" style="color:#ff7300;">橙色</option>
+	<option value="white" style="color:#fff;;background-color:#000">白色</option>	
+	</select>
+	（<input type="checkbox" name="addheight" onclick="activateH(this)"/>头部追加空白行
+	高度值：<input disabled type="text" name="height" value="0" size=4 maxlength=3 onblur="checkHValue()" onfocus="this.select();"/> <span id="heightwrong" class="red" style="display:none" >请输入0-999的数值！</span>）
+	<span id="addTitleOrNot" class="ml21 dn"><input type="checkbox" name="addTitleOrNot" checked onclick="addTitle(this)"/>是否套标题头</span>
+	<input type="hidden" id="isJsBlock" value="0"/>
+	</form>
+	
+</div>
+
+
+<form id="partform" class="lht20" method="post" action="" target="_blank">
+
+<ul	class="sw_3">
+<li id="swpart_0_li" class="hov" ><a href="javascript:void(0)" onclick="showswpart('swpart_0');return false">图片文字块</a></li>
+<li id="swpart_1_li" ><a href="javascript:void(0)" onclick="showswpart('swpart_1');return false">纯文字块</a></li>
+<li id="swpart_2_li" ><a href="javascript:void(0)" onclick="showswpart('swpart_2');return false">辅助模块</a></li>
+<li id="swpart_js_li" ><a class="lst" href="javascript:void(0)" onclick="showswpart('swpart_js');return false;alert('友情提示：要增加js效果，请使用【空 白 块】');return false">JS 效果</a></li>
+</ul>
+
+
+<div id="lnkclr">
+<div id="txtclr">
+
+<!-- 图片文字块 -->
+<div id="swpart_0" class="parts" style="display:;" >	
+	<div class="partq l">
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a0,0,0"/>	<span class="partname">parts_img_a0</span></div>
+		<div></div><div class="phold">
+			<ul class="pl ll i_pl1">
+			<li class="base" ><a href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>图片文字链</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>		
+		</div>
+		<div class="descrpt"><b>描述：</b>图片文字链 可调整</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a1,0,0"/>	<span class="partname">parts_img_a1</span></div>
+		<div></div><div class="phold">
+			<ul class="pl pla ll i_pl2">
+			<li class="base"><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>图片文字链</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>
+		</div>
+		<div class="descrpt"><b>描述：</b>图片文字链 横图外框</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a2,0,0"/>	<span class="partname">parts_img_a2</span></div>
+		<div></div><div class="phold">
+			<ul class="pl plb ll i_pl2">
+			<li class="base"><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>图片文字链</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>		
+		</div>
+		<div class="descrpt"><b>描述：</b>图片文字链 竖图外框</div>		
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a3,0,0"/>	<span class="partname">parts_img_a3</span></div>
+		<div></div><div class="phold">
+			<ul class="pl ll i_pl4">
+			<li class="base" ><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>图片文字链</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>		
+		</div>
+		<div class="descrpt"><b>描述：</b>图片单行文字链</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a4,0,0"/>	<span class="partname">parts_img_a4</span></div>
+		<div></div><div class="phold">
+			<ul class="ll i_pl3">
+			<li class="base"><a class="pl" href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/><div>图图片链图片链图片链图片链图片链片链链图片链片链链图片链片链</div></a>
+			<div class="l20 base"><span class="ant_txt">文字可改：</span><a href="javascript:void(0)">可改</a></div>
+			<div class="l20"><span class="ant_txt">文字可改：</span><a href="javascript:void(0)">可改</a></div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+			</li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>	
+		</div>
+		<div class="descrpt"><b>描述：</b>占宽142px；图片宽度 &lt;= 130px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a5,0,0"/>	<span class="partname">parts_img_a5</span></div>
+		<div></div><div class="phold">
+			<ul class="ll i_pl5">
+			<li class="base"><a class="pl" href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="160" height="120"/><div>图图片链图片链图片链图片链图片链片链链图片链片链链图片链片链</div></a>
+			<div class="l20 base"><span class="ant_txt">文字可改：</span><a href="javascript:void(0)">可改</a></div>
+			<div class="l20"><span class="ant_txt">文字可改：</span><a href="javascript:void(0)">可改</a></div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+			</li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>	
+		</div>
+		<div class="descrpt"><b>描述：</b>占宽182px；图片宽度 &lt;= 170px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a6,0,0"/>	<span class="partname">parts_img_a6</span></div>
+		<div></div><div class="phold">
+			<ul class="i_xc">
+			<li class="base" ><a class="pl" href="http://q.china.alibaba.com/quan/picture/picList/50/1021809/1.html"><img src="http://www.51edu.com/zt/imgs/all.gif" width="96" height="72"/><i>淘宝热卖的创意家居</i></a><u class="ant_txt">共16张</u></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>
+		</div>
+		<div class="descrpt"><b>描述：</b>商圈相册专用(小号)，96*72</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_a7,0,0"/>	<span class="partname">parts_img_a7</span></div>
+		<div></div><div class="phold">
+			<ul class="i_xc i_xc2">
+			<li class="base"><a class="pl" href="http://q.china.alibaba.com/quan/picture/picList/50/1021809/1.html"><img src="http://www.51edu.com/zt/imgs/all.gif" width="160" height="120"/><i>淘宝热卖的创意家居</i></a><u class="ant_txt">共16张</u></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>
+		</div>
+		<div class="descrpt"><b>描述：</b>商圈相册专用(大号)，160*120</div>
+
+	</div>
+
+
+	<div class="partq l">		
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_b0,0,0"/>	<span class="partname">parts_img_b0</span></div>
+		<div></div><div class="phold">
+			<div class="i_txtrd base">
+				<a href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="100" height="100" align="left"/></a><span class="ant_txt">NBA火箭新年第一战惨负猛龙 篮网大逆转加时胜老鹰新浪乐居全国17站新版上线 NBA火箭新年第一战惨负猛龙环球股指NBA火箭新年第一战惨负猛龙环球股指NBA火箭新年第一战惨负猛龙...</span><a href="javascript:void(0)">[详细]</a>
+			</div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>文字介绍 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_b1,0,0"/>	<span class="partname">parts_img_b1</span></div>
+		<div></div><div class="phold">
+			<div class="pp pb7 base">
+				<a href="javascript:void(0)"><img class="img_d mr7" src="http://www.51edu.com/zt/imgs/all.gif" width="64" height="64" align="left"/></a>		
+				<h3><a href="javascript:void(0)">一大把服装圈</a></h3>
+				<p><span class="ant_txt">服装经销商的网络商圈！开店技巧……</span><a href="javascript:void(0)">[更多]</a></p>	
+			</div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>标题介绍 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_b2,0,0"/>	<span class="partname">parts_img_b2</span></div>
+		<div></div><div class="phold">
+			<div class="tb pb7 base">
+				<div class="tbc">
+					<a class="mr7" href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="64" height="64" /></a>
+				</div>		
+				<div class="tbc">
+					<h2 class="ml7" ><a href="javascript:void(0)">韩国的衣服真好啊</a></h2>
+					<ul class="li23 mt3" >
+					<li class="base" ><a href="javascript:void(0)">35元韩版毛绒棉外套</a></li>
+					<li><a href="javascript:void(0)">韩版双排扣甜美大衣</a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>	
+				</div>
+				<div class="c"></div>
+			</div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>标题加链接 </div>
+		
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_b3,0,0"/>	<span class="partname">parts_img_b3</span></div>
+		<div></div><div class="phold">
+			<div class="tb pb7 base">
+				<div class="tbc">
+					<a class="mr7" href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="64" height="64" /></a>
+				</div>		
+				<div class="tbc">
+					<h2 class="ml7" ><a href="javascript:void(0)">韩国的衣服真好啊</a></h2>
+					<ul class="li23 mt3" >
+					<li class="base" ><a href="javascript:void(0)">35元韩版毛绒棉外套</a></li>
+					<li><a href="javascript:void(0)">韩版双排扣甜美大衣</a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>	
+				</div>
+				<div class="c"></div>
+			</div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>标题加链接 </div>
+
+
+	</div>
+
+	<div class="parth r">
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_c0,0,0"/>	<span class="partname">parts_img_c0</span></div>
+		<div></div><div class="phold">
+			<div class="pp f12 l20 base">
+				<a class="pl mrc mt3" href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96" />图片文字链接</a>	
+				<ul>
+				<li class="base" ><a href="javascript:void(0)">差点卖到脱销 35元韩版毛绒棉外套</a></li>
+				<li><a href="javascript:void(0)">37元俏皮棉衣 公道价格优良品质</a></li>
+				<li><a href="javascript:void(0)">让你美到爆棚 62元低价韩版针织衫</a></li>
+				<li><a href="javascript:void(0)">韩版双排扣甜美大衣 56元美到你</a></li>
+				<li><a href="javascript:void(0)">57元瑞丽连帽牛角扣风衣 物超所值 </a></li>
+				<li><a href="javascript:void(0)">乖巧俏皮女生 12款冬季日系甜美搭</a></li>
+				<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+				</ul>	
+			</div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>左右图文链接 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_c1,0,0"/>	<span class="partname">parts_img_c1</span></div>
+		<div></div><div class="phold">
+			<div class="tb i_tbc base">
+				<div class="tbc">
+					<a href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96" /></a>
+				</div>		
+				<div class="tbc">
+					<h2 class="ml7" ><a href="javascript:void(0)">韩国的衣服真好啊</a></h2>
+					<ul class="li23 mt3" >
+					<li class="base" ><a href="javascript:void(0)">差点卖到脱销 35元韩版毛绒棉外套</a></li>
+					<li><a href="javascript:void(0)">37元俏皮棉衣 公道价格优良品质</a></li>
+					<li><a href="javascript:void(0)">让你美到爆棚 62元低价韩版针织衫</a></li>
+					<li><a href="javascript:void(0)">韩版双排扣甜美大衣 56元美到你</a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>	
+				</div>	
+			</div>
+			<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>左右分链带频道</div>
+
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_c2,0,0"/>	<span class="partname">parts_img_c2</span></div>
+		<div></div><div class="phold">
+			<div class="f ppu pb7">
+				<a class="l mrc" href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/></a>
+				<div class="pr7">	
+					<h2><a href="javascript:void(0)">新闻头条</a></h2>
+					<p class="l20" ><span class="ant_txt">NBA火箭新年第一战惨负猛龙 篮网大逆转加时胜老鹰新浪乐居全国17站新版上线 NBA火箭新年第一战惨负猛龙惨负猛龙 新浪乐居新版上线...</span><a href="javascript:void(0)">[更多]</a></p>
+					<div class="c"></div>
+					<hr />
+					<ul class="li23">
+					<li class="base" ><a class="r f12">右侧链接</a><a href="javascript:void(0)">天天有新款 卖疯了的49元韩版外套</a></li>
+					<li><a class="r f12">右侧链接</a><a href="javascript:void(0)">韩式MM教你 多风格混搭令人痴迷 </a></li>
+					<li><a class="r f12">右侧链接</a><a href="javascript:void(0)">08冬季韩式美眉 漂亮装扮迷死人 </a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>		
+				</div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>图文混排 <br /><b>宽度：</b>适应宽度 > 425px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_c3,0,0"/>	<span class="partname">parts_img_c3</span></div>
+		<div></div><div class="phold">
+			<div class="suit_img_a0_w472">
+				<ul class="pl ll f">
+				<li class="t" ><a href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>公道价格优良品质公道价格优良品质公道</a></li>
+				<li class="t"><a href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>公道价格优良品质公道价格优良品质公道</a></li>
+				<li class="t"><a href="javascript:void(0)"><img class="img_d" src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>公道价格优良品质公道价格优良品质公道</a></li>
+				</ul>
+				<hr />
+				<div class="t l">
+					<ul class="li23">
+					<li class="base" ><a href="javascript:void(0)">公道价格优良品质</a></li>
+					<li><a href="javascript:void(0)">62元低价韩版针织衫</a></li>
+					<li><a href="javascript:void(0)">韩版双排扣甜美大衣</a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>
+				</div>
+				<div class="t l">
+					<ul class="li23">
+					<li class="base" ><a href="javascript:void(0)">公道价格优良品质</a></li>
+					<li><a href="javascript:void(0)">62元低价韩版针织衫</a></li>
+					<li><a href="javascript:void(0)">韩版双排扣甜美大衣</a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>
+				</div>
+				<div class="t l">
+					<ul class="li23">
+					<li class="base" ><a href="javascript:void(0)">公道价格优良品质</a></li>
+					<li><a href="javascript:void(0)">62元低价韩版针织衫</a></li>
+					<li><a href="javascript:void(0)">韩版双排扣甜美大衣</a></li>
+					<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文混排 <br /><b>宽度：</b> > 472px</div>
+
+
+	</div>
+	
+ 
+	<div class="tbsep"></div>
+	<div class="partf" >	
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d4,0,0"/>	<span class="partname">parts_img_d4</span></div>
+		<div></div><div class="phold">			
+			<div class="i_plist1">
+				<div class="pl pla plnb">
+					<a class="base" href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+					<div class="c"></div>
+				</div>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文链阵列<br /><b>宽度：</b>952px</div>
+	
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d0,0,0"/>	<span class="partname">parts_img_d0</span></div>
+		<div></div><div class="phold">			
+			<div class="i_plist1">
+				<div class="pl pla">
+					<a class="base" href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="128" height="96"/>picdescription</a>
+					<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+					<div class="c"></div>
+				</div>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文链阵列<br /><b>宽度：</b>952px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d5,0,0"/>	<span class="partname">parts_img_d5</span></div>
+		<div></div><div class="phold">			
+			<div class="i_plist2">
+				<div class="pl plb plnb">
+					<a class="base" href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+					<div class="c"></div>
+				</div>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文链阵列<br /><b>宽度：</b>952px</div>
+
+
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d1,0,0"/>	<span class="partname">parts_img_d1</span></div>
+		<div></div><div class="phold">			
+			<div class="i_plist2">
+				<div class="pl plb">
+					<a class="base" href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="160"/>picdescription</a>
+					<div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</div>
+					<div class="c"></div>
+				</div>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文链阵列<br /><b>宽度：</b>952px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d2,parts_img_d2,0"/>	<span class="partname">parts_img_d2</span></div>
+		<div></div><div class="phold">			
+			<link href="http://www.51edu.com/zt/parts/parts_img_d2.css" type=text/css rel=stylesheet />
+			<table class="coop"  width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th width="100"><div class="mt7 ant_txt">合作媒体：</div></th>
+				<td>
+					<div class="pl pl_botad" >
+						<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="60"/></a><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="60"/></a><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="60"/></a><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="60"/></a><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="60"/></a><a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="120" height="60"/></a>
+						<div class="c"></div>
+					</div>
+					<hr />
+
+					<div class="c"></div>
+					<div class="lk_l l20 pl7">
+						<a href="javascript:void(0)">淘宝女人频道</a> <a href="javascript:void(0)">淘宝服饰频道</a> <a href="javascript:void(0)">时尚起义</a> <a href="javascript:void(0)">批吧网</a> <a href="javascript:void(0)">OnlyLady</a> <a href="javascript:void(0)">中国时尚品牌网</a> <a href="javascript:void(0)">逛街网</a> <a href="javascript:void(0)">衣酷服装批发</a> <a href="javascript:void(0)">TOM女性风尚</a> <a href="javascript:void(0)">百惠结婚网</a> <a href="javascript:void(0)">城中至潮网</a> <a href="javascript:void(0)">云e坊女装</a> <a href="javascript:void(0)">中国伊人网</a> <a href="javascript:void(0)">全国服装网</a> <a href="javascript:void(0)">百惠结婚网</a> <a href="javascript:void(0)">云e坊女装</a> <a href="javascript:void(0)">A5时尚街拍网</a> <a href="javascript:void(0)">搜巡鞋网</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><div class="ant_txt">合作电话：</div></th>
+				<td class="b" ><span class="ant_txt">0571-85022088-12902</span></td>
+			</tr>
+			</table>			
+		</div>
+		<div class="descrpt"><b>描述：</b>页底合作媒体 <br /><b>宽度：</b>952px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d3,0,0"/>	<span class="partname">parts_img_d3</span></div>
+		<div></div><div class="phold">			
+			<div class="i_plist3" >
+				<div class="pl pla">
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="218" height="267"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>		
+					<div class="cl"></div>
+				</div>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文链阵列<br /><b>宽度：</b>952px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_img_d6,0,0"/>	<span class="partname">parts_img_d6</span></div>
+		<div></div><div class="phold">			
+			<div class="i_plist3" >
+				<div class="pl pla plnb">
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="218" height="267"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>
+					<a href="javascript:void(0)"><img src="http://www.51edu.com/zt/imgs/all.gif" width="144" height="108"/>picdescription</a>		
+					<div class="cl"></div>
+				</div>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图文链阵列<br /><b>宽度：</b>952px</div>
+		
+	</div>
+
+
+</div>
+
+<!-- 纯文字块 -->
+<div id="swpart_1" class="parts" style="display:none;">
+	<div class="partq l">	
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a0,0,0"/>	<span class="partname">parts_txt_a0</span></div>
+		<div></div><div class="phold">
+			<ul class="pb7 pl7" >
+			<li class="base"><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>无点文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a1,0,0"/>	<span class="partname">parts_txt_a1</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 pb7">
+			<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>基本文字链-灰色点 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a2,0,0"/>	<span class="partname">parts_txt_a2</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 li23_d pb7">
+			<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>基本文字链-黑色点 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a3,0,0"/>	<span class="partname">parts_txt_a3</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 li23_b pb7">
+			<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>基本文字链-蓝色点 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a4,0,0"/>	<span class="partname">parts_txt_a4</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 li23_r pb7">
+			<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>基本文字链-红色点 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a5,0,0"/>	<span class="partname">parts_txt_a5</span></div>
+		<div></div><div class="phold">
+			<ul class="ll23 ml3 mr5 pb7">               
+			<li><a class="rk n_1" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_2" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_3" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_4" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_5" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_6" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_7" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_8" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_9" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			<li><a class="rk n_0" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>排行榜基本 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_a6,0,0"/>	<span class="partname">parts_txt_a6</span></div>
+		<div></div><div class="phold">
+			<ul class="ll23 ml3 mr5 pb7">               
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_1" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_2" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_3" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_4" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_5" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_6" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_7" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_8" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_9" href="javascript:void(0)"> ranktext ranktext</a></li>
+			<li><div class="r ant_txt">[1123]</div><a class="rk n_0" href="javascript:void(0)"> ranktext ranktext</a></li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>排行榜带点击数 </div>
+
+	</div>
+
+	<div class="partq l">
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b7,0,0"/>	<span class="partname">parts_txt_b7</span></div>
+		<div></div><div class="phold">
+			<div class="harea">
+				<p class="pb7" ><span class="ant_txt">NBA火箭新年第一战惨负猛龙 篮网大逆转加时胜老鹰新浪乐居全国17站新版上线 NBA火箭第一战...</span><a href="javascript:void(0)">[更多]</a></p>
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>仅文字 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b0,0,0"/>	<span class="partname">parts_txt_b0</span></div>
+		<div></div><div class="phold">
+			<div class="harea">
+				<h1 class="hsty_2 black" ><a href="javascript:void(0)">统战部:中央对西藏不存在"镇压"</a></h1>
+				<ul>
+				<li class="base"><a class="base" href="javascript:void(0)">[伤痛2008]</a><a href="javascript:void(0)">[达赖向中央提要求]</a><div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false"></div></li>
+				<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+				</ul>			
+			</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>头条标题文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b1,0,0"/>	<span class="partname">parts_txt_b1</span></div>
+		<div></div><div class="phold">
+			<div class="harea">
+				<h2><a href="javascript:void(0)">统战部:中央对西藏不存在"镇压</a></h2>
+				<p><span class="ant_txt">　　Wii是任天堂在2006年推出的游戏主机，当前全球销量已突破千万台...</span><a class="gray"  href="javascript:void(0)">[详细]</a></p>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>头条标题文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b2,0,0"/>	<span class="partname">parts_txt_b2</span></div>
+		<div></div><div class="phold">
+			<div class="harea" >
+				<h2><a href="javascript:void(0)">XBOX360 初步资料</a></h2>
+				<p><a href="javascript:void(0)">Wii是任天堂在2006年推出的创新游戏主机，当前全球销量已突破千万台...</a></p>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>头条标题文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b3,0,0"/>	<span class="partname">parts_txt_b3</span></div>
+		<div></div><div class="phold">
+			<div class="da pb7">				
+				<a class="base" href="javascript:void(0)">国际新闻</a><a href="javascript:void(0)">国内新闻</a><a href="javascript:void(0)">游戏美眉</a><a href="javascript:void(0)">电竞视频</a><a href="javascript:void(0)">精彩图库</a><a href="javascript:void(0)">魔兽宝典</a><a href="javascript:void(0)">link</a><a href="javascript:void(0)">魔兽漫画</a><a href="javascript:void(0)">游戏主机</a><a href="javascript:void(0)">排行榜</a><a href="javascript:void(0)">电子竞技</a><a href="javascript:void(0)">电玩娱乐</a><div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false"></div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>蛇形文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b4,0,0"/>	<span class="partname">parts_txt_b4</span></div>
+		<div></div><div class="phold">
+			<div class="da da1 pb7">				
+				<a class="base" href="javascript:void(0)">国际新闻</a><a href="javascript:void(0)">国内新闻</a><a href="javascript:void(0)">游戏美眉</a><a href="javascript:void(0)">电竞视频</a><a href="javascript:void(0)">精彩图库</a><a href="javascript:void(0)">魔兽宝典</a><a href="javascript:void(0)">魔兽漫画</a><a href="javascript:void(0)">游戏主机</a><div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false"></div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>蛇形文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b5,0,0"/>	<span class="partname">parts_txt_b5</span></div>
+		<div></div><div class="phold">
+			<div class="da da2 pb7" >				
+				<span class="base" ><a href="javascript:void(0)">国际新闻</a>┊</span><span ><a href="javascript:void(0)">国内新闻</a>┊</span><span ><a href="javascript:void(0)">游戏美眉</a>┊</span><span ><a href="javascript:void(0)">电竞视频</a>┊</span><span ><a href="javascript:void(0)">精彩图库</a>┊</span><span ><a href="javascript:void(0)">魔兽宝典</a>┊</span><span ><a href="javascript:void(0)">魔兽漫画</a>┊</span><div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false"></div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>蛇形文字链 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b6,0,0"/>	<span class="partname">parts_txt_b6</span></div>
+		<div></div><div class="phold">
+			<ul class="harea">
+			<li class="base" >
+				<div class="bg_1">
+					<h2 class="dot"><a href="javascript:void(0)">XBOX360 初步资料</a></h2>
+					<p><a href="javascript:void(0)">Wii是任天堂在2006年推出的创新游戏主机...</a></p>
+				</div>
+				<div>
+					<h2 class="dot"><a href="javascript:void(0)">XBOX360 初步资料</a></h2>
+					<p><a href="javascript:void(0)">Wii是任天堂在2006年推出的创新游戏主机...</a></p>
+				</div>
+			</li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>头条标题文字链列表 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b7,0,0"/>	<span class="partname">parts_txt_b7</span></div>
+		<div></div><div class="phold">
+			<ul class="wcomt" >
+			<li class="base" ><a href="javascript:void(0)">网易网友破解陈水扁诗中密语</a><br /><span class="ant_txt">——阿扁给妻子情诗疑藏密语，网友合力破解</span></li>
+			<li><a href="javascript:void(0)">网易网友破解陈水扁诗中密语</a><br /><span class="ant_txt">——阿扁给妻子情诗疑藏密语，网友合力破解</span></li>	
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>注解类文字链列表 </div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_b8,0,0"/>	<span class="partname">parts_txt_b8</span></div>
+		<div></div><div class="phold">
+			<ul class="cat_tag2">
+			<li>创业热点类目</li>
+			</ul>
+			<ul class="dalst pb7">
+			<li class="base da" ><b><a href="javascript:void(0)">服装服饰</a></b><a class="base" href="javascript:void(0)">女装</a><a href="javascript:void(0)">男装</a><a href="javascript:void(0)">牛仔裤</a><a href="javascript:void(0)">韩版</a><a href="javascript:void(0)">情趣内衣</a><a href="javascript:void(0)">品牌折扣</a><a href="javascript:void(0)">库存</a><a href="javascript:void(0)">瑞丽</a><div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false"></div></li>
+			<li class="da" ><b><a href="javascript:void(0)">服装服饰</a></b><a class="base" href="javascript:void(0)">女装</a><a href="javascript:void(0)">男装</a><a href="javascript:void(0)">牛仔裤</a><a href="javascript:void(0)">韩版</a><a href="javascript:void(0)">情趣内衣</a><a href="javascript:void(0)">品牌折扣</a><a href="javascript:void(0)">库存</a><a href="javascript:void(0)">瑞丽</a><div class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false"></div></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>	
+		</div>
+		<div class="descrpt"><b>描述：</b>块状链接列表 </div>
+		
+	</div>
+
+	<div class="parth r">
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c7,0,0"/>	<span class="partname">parts_txt_c7</span></div>
+		<div></div><div class="phold">
+			<div class="intt intt_a0">
+				<a class="mr" href="javascript:void(0)">更多</a><div class="ttc ant_txt">子标题</div>
+			</div>		
+		</div>
+		<div class="descrpt"><b>描述：</b>子标题模式</div>		
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c11,0,0"/>	<span class="partname">parts_txt_c11</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 pb7">
+			<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a> <span class="tlgray ant_txt">(2009-1-12)</span></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a> <span class="tlgray ant_txt">(2009-1-12)</span></li>
+			<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a> <span class="tlgray ant_txt">(2009-1-12)</span></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>子标题模式</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c0,0,0"/>	<span class="partname">parts_txt_c0</span></div>
+		<div></div><div class="phold">
+			<ul class="pb7" >
+			<li class="base" ><a class="r f12">右侧链接</a><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r f12">右侧链接</a><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r f12">右侧链接</a><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>左右分链</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c1,0,0"/>	<span class="partname">parts_txt_c1</span></div>
+		<div></div><div class="phold">
+			<ul class="pb7">
+			<li class="base" ><a class="r f12">右侧链接</a><a class="gray" href="javascript:void(0)">[频道]</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r f12">右侧链接</a><a class="gray" href="javascript:void(0)">[频道]</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r f12">右侧链接</a><a class="gray" href="javascript:void(0)">[频道]</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>左右分链带频道</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c2,0,0"/>	<span class="partname">parts_txt_c2</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 pb7">
+			<li class="base" ><a class="r f12">右侧链接</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r f12">右侧链接</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r f12">右侧链接</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>带点左右分链</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c3,0,0"/>	<span class="partname">parts_txt_c3</span></div>
+		<div></div><div class="phold">
+			<ul class="li23 pb7">
+			<li class="base" ><a class="r h" href="javascript:void(0)">右侧链接右侧链接，左右宽度平分</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r h" href="javascript:void(0)">右侧链接右侧链接，左右宽度平分</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li><a class="r h" href="javascript:void(0)">右侧链接右侧链接，左右宽度平分</a> <a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>带点左右均等链</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c4,0,0"/>	<span class="partname">parts_txt_c4</span></div>
+		<div></div><div class="phold">
+			<div class="h l">
+				<ul class="li23 pb7">
+				<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+				<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+				<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+				<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+				</ul>
+			</div>			
+			<div class="h r">
+				<ul class="li23 pb7">
+				<li class="base" ><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+				<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+				<li><a href="javascript:void(0)">中国梦1978 张步兵：我想有个组织</a></li>
+				<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+				</ul>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>带点左右均等链</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c5,0,0"/>	<span class="partname">parts_txt_c5</span></div>
+		<div></div><div class="phold">
+			<div class="h l">
+				<div class="intt mr14 ml5"><a class="r mr" href="javascript:void(0)">>更多</a><span class="ant_txt">深度报道</span></div>
+				<ul class="li23 pb7">
+				<li class="base" ><a href="javascript:void(0)">梁朝伟为新戏想练腹肌</a></li>
+				<li><a href="javascript:void(0)">梁朝伟为新戏想练腹肌</a></li>
+				<li><a href="javascript:void(0)">梁朝伟为新戏想练腹肌</a></li>
+				<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+				</ul>
+			</div>
+			<div class="h r">
+				<div class="intt mr14 ml5"><a class="r mr" href="javascript:void(0)">>更多</a><span class="ant_txt">深度报道</span></div>
+				<ul class="li23 pb7">
+				<li class="base" ><a href="javascript:void(0)">梁朝伟为新戏想练腹肌</a></li>
+				<li><a href="javascript:void(0)">梁朝伟为新戏想练腹肌</a></li>
+				<li><a href="javascript:void(0)">梁朝伟为新戏想练腹肌</a></li>
+				<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+				</ul>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>带点左右均等链</div>
+		
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c6,0,0"/>	<span class="partname">parts_txt_c6</span></div>
+		<div></div><div class="phold">
+			<ul class="cat_tag">
+			<li><span class="ant_txt">工业品</span></li>
+			</ul>
+			<ul class="category_row">
+			<li class="w1 base"> <a class="c_top orange" href="javascript:void(0)">机械</a> <a class="c_top" href="javascript:void(0)">阀门</a> <a class="c_top" href="javascript:void(0)">轴承</a> <a class="c_top" href="javascript:void(0)">模具</a> <a class="c_top" href="javascript:void(0)">刀具夹具</a> <a class="c_top" href="javascript:void(0)">泵</a>
+			  <ul class="cell_category">
+				<li> <a href="javascript:void(0)">齿轮</a> </li>
+				<li> <a href="javascript:void(0)">风机</a> </li>
+				<li> <a class="orange" href="javascript:void(0)">机床</a> </li>
+				<li> <a href="javascript:void(0)">锅炉</a> </li>
+				<li> <a href="javascript:void(0)">压缩机</a> </li>
+				<li> <a href="javascript:void(0)">减速机</a> </li>
+				<li> <a class="orange" href="javascript:void(0)">焊机</a> </li>
+				<li> <a href="javascript:void(0)">振动筛</a> </li>
+				<li> <a href="javascript:void(0)">粉碎机</a> </li>
+				<li> <a href="javascript:void(0)">密封件</a> </li>
+				<li> <a href="javascript:void(0)">弹簧</a> </li>
+				<li> <a href="javascript:void(0)">滤芯</a> </li>
+				<li> <a href="javascript:void(0)">零部件加工</a> </li>
+				<li> <a href="javascript:void(0)">金属加工</a> </li>
+				<li> <a href="javascript:void(0)">模具加工</a> </li>
+				<li class="nobd"> <a href="javascript:void(0)">更多</a> </li>
+			  </ul>
+			</li>
+			<li class="pa ext" title="leftclick add;dblclick del" ondblclick="doDblClick(this);return false" onclick="firstClick(this);return false">&nbsp;</li>
+			</ul>			
+		</div>
+		<div class="descrpt"><b>描述：</b>类目文字链 </div>
+		
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c8,0,0"/>	<span class="partname">parts_txt_c8</span></div>
+		<div></div><div class="phold">
+			<div class="intt intt_a1">
+				<a class="mr" href="javascript:void(0)">更多</a><div class="ttc ant_txt">子标题</div>
+			</div>		
+		</div>
+		<div class="descrpt"><b>描述：</b>子标题模式</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c9,0,0"/>	<span class="partname">parts_txt_c9</span></div>
+		<div></div><div class="phold">
+			<div class="intt intt_b0">
+				<a class="mr" href="javascript:void(0)">更多</a><div class="ttc ant_txt">子标题</div>
+			</div>		
+		</div>
+		<div class="descrpt"><b>描述：</b>子标题模式</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c10,0,0"/>	<span class="partname">parts_txt_c10</span></div>
+		<div></div><div class="phold">
+			<div class="intt intt_b1">
+				<a class="mr" href="javascript:void(0)">更多</a><div class="ttc ant_txt">子标题</div>
+			</div>		
+		</div>
+		<div class="descrpt"><b>描述：</b>子标题模式</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_txt_c11,0,0"/>	<span class="partname">parts_txt_c11</span></div>
+		<div></div><div class="phold">
+			<div class="intt intt_c0">
+				<a class="mr" href="javascript:void(0)">更多</a><div class="ttc ant_txt">子标题</div>
+			</div>		
+		</div>
+		<div class="descrpt"><b>描述：</b>子标题模式</div>
+
+	</div>
+
+</div>
+
+<!-- 辅助模块 -->
+<div id="swpart_2" class="parts" style="display:none;">
+	<div class="partq l">
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_ass_a0,0,0"/>	<span class="partname">parts_ass_a0</span></div>
+		<div></div><div class="phold">
+			<div class="dotline"></div>
+		</div>
+		<div class="descrpt"><b>描述：</b>分隔线</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_ass_a1,0,0"/>	<span class="partname">parts_ass_a1</span></div>
+		<div></div><div class="phold">
+			<hr />
+		</div>
+		<div class="descrpt"><b>描述：</b>分隔线</div>
+	</div>
+	<div class="partq l">
+
+	</div>
+	<div class="parth r">
+
+	</div>
+</div>
+
+<!-- Js模块 -->
+<div id="swpart_js" class="parts" style="display:none;">	
+	<div class="parth l">
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_js_picrotate,parts_js_picrotate,parts_js_picrotate"/>	<span class="partname">parts_js_picrotate</span></div>
+		<div></div><div class="phold">
+			<link href="http://www.51edu.com/zt/parts/parts_js_picrotate.css?t=235" type=text/css rel=stylesheet />
+			<script type="text/javascript" src="http://www.51edu.com/zt/parts/parts_js_picrotate.js?t=1233" ></script>
+			<div id="SlidePlayer" class="SlidePlayer">
+				<ul class="Slides">
+					<li><a target="_blank" href="http://info.china.alibaba.com/news/detail/v3000103-d1002949949.html"   ><img 
+					src="http://img.china.alibaba.com/news/upload/3000103/news/2004/9/10/26_1222149022707.jpg" alt="秋天这么穿绝对吸引眼球 主角就是你"></a></li>
+					<li><a target="_blank" href="http://info.china.alibaba.com/news/detail/v3000103-d1002963622.html" ><img 
+					src="http://img.china.alibaba.com/news/upload/3000103/news/2004/9/10/27_1222149022731.jpg" alt="初秋美丽女孩层次穿搭 流行POP风"></a></li>
+					<li><a target="_blank" href="http://info.china.alibaba.com/news/detail/v3000103-d1002962039.html"><img 
+					src="http://img.china.alibaba.com/news/upload/3000103/news/2004/9/10/28_1222149022741.jpg" alt="秋天已经来了 韩国MM都穿些什么"></a></li>
+					<li><a target="_blank" href="http://info.china.alibaba.com/news/detail/v3000103-d1002949488.html"><img 
+					src="http://img.china.alibaba.com/news/upload/3000103/news/2004/9/10/30_1222150038465.jpg" alt="清爽秋装型男搭配 12款绝版推荐"></a></li>
+				</ul>
+			</div>
+			<div class="del">[script type="text/javascript"]			
+			new SlidePlayer("SlidePlayer", 230, 320);
+			[/script]</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>头图切换，copy淘宝 <br /><b>宽度：</b>232px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio" value="parts_js_picrotate1,parts_js_picrotate1,parts_js_picrotate1"/>	<span class="partname">parts_js_picrotate1</span></div>
+		<div></div><div class="phold">
+			<link href="http://www.51edu.com/zt/parts/parts_js_picrotate1.css?t=235" type=text/css rel=stylesheet />
+			<script type="text/javascript" src="http://www.51edu.com/zt/parts/parts_js_picrotate1.js?t=1233" ></script>
+			
+			<div class="z">
+				<div class="l pr picRotate white f">
+					<dl id="autosw_b" class="pr l f">
+					<ul id="autosw_a" class="sw lk_n ll">
+					<li><div class="o_1"></div><a class="pa">1</a></li>
+					<li><div class="o_1"></div><a class="pa">2</a></li>
+					<li><div class="o_1"></div><a class="pa">3</a></li>
+					</ul>
+					<dd class="dn">
+						<a class="pl f" href="javascript:void(0)" target="_blank"><img src="http://img.china.alibaba.com/news/upload/ae/chat/4g_1204253426474.jpg" alt="" width=100% /><span class="db"><div class="o_1"></div><div class="pa">descript1</div></span></a><div class="c"></div>
+					</dd>
+					<dd class="db">
+						<a class="pl f" href="javascript:void(0)" target="_blank"><img src="http://img.china.alibaba.com/news/upload/ae/chat/6i_1204090137339.jpg" alt="" width=100% /><span class="db"><div class="o_1"></div><div class="pa">descript2</div></span></a><div class="c"></div>
+					</dd>
+					<dd class="dn">
+						<a class="pl f" href="javascript:void(0)" target="_blank"><img src="http://img.china.alibaba.com/news/upload/5003505/zhibo/zz1/7_1204083441888.jpg" alt=""  width=100% /><span class="db"><div class="o_1"></div><div class="pa">descript3</div></span></a><div class="c"></div>
+					</dd>
+					</dl>					
+				</div>
+				<div class="c"></div>
+			</div>
+			<div class="del">[script type="text/javascript"]			
+			fpicInitialize('autosw',0);
+			autoSwitch('autosw',0);
+			[/script]</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>头图切换，copy淘宝 <br /><b>宽度：</b>自适应</div>
+		
+		<div class="partsel"><input  class="partrad" type="radio" name="partradio"  value="parts_js_opaslide,0,parts_js_opaslide"/>	<span class="partname">parts_js_opaslide</span></div>
+		<div></div><div class="phold" >
+			<script type="text/javascript" src="http://www.51edu.com/zt/parts/parts_js_opaslide.js?t=2563" ></script>
+			<div id="opaslide" class="opaslide"><a href="javascript:void(0)"><img src="http://img.china.alibaba.com/news/upload/3000103/news/2009/1/7/120x160_11eaefa2753.jpg"/></a><a href="javascript:void(0)"><img src="http://img.china.alibaba.com/news/upload/3000103/news/2009/1/7/120x160_11eaefbe0d9.jpg"/></a><a href="javascript:void(0)"><img src="http://img.china.alibaba.com/news/upload/3000103/news/2009/1/5/120x160_11ea57ad89d.jpg"/></a></div>
+			<div class="del">[script type="text/javascript"]			
+			opaSlide.ini();
+			[/script]</div>
+		</div>
+		<div class="descrpt"><b>描述：</b>图片透明切换 <br /><b>宽度：</b>自适应</div>
+
+		<div class="partsel"><input  class="partrad" type="radio" name="partradio"  value="parts_js_sw_1,parts_js_sw_0,parts_js_sw_0"/>	<span class="partname">parts_js_sw_1</span></div>
+		<div></div><div class="phold">
+			<div class="f">
+				<link href="http://www.51edu.com/zt/parts/parts_js_sw_0.css?t=235" type=text/css rel=stylesheet />
+				<ul	id="sw1_a"	class="sw sw_0 swjs">
+				<li><a href="javascript:void(0)">title1</a></li>
+				<li><a href="javascript:void(0)">title2</a></li>
+				</ul>
+				<a class="r swm" href="javascript:void(0)">>>更多</a>
+				<dl	id="sw1_b">
+				<dd>
+					<ul class="ll23 ml3 mr5 pb7">               
+					<li><a class="rk n_1" href="javascript:void(0)"> 1ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_2" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_3" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_4" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_5" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_6" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_7" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_8" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_9" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_0" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					</ul>
+				</dd>
+				<dd	class="dn">
+					<ul class="ll23 ml3 mr5 pb7">               
+					<li><a class="rk n_1" href="javascript:void(0)"> 2ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_2" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_3" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_4" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_5" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_6" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_7" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_8" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_9" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					<li><a class="rk n_0" href="javascript:void(0)"> ranktext ranktext ranktext</a></li>
+					</ul>			
+				</dd>
+				</dl>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>普通两列切换 <br /><b>宽度：</b>&gt;=232px</div>
+	</div>
+
+	<div class="parth r">
+		<div class="partsel"><input  class="partrad" type="radio" name="partradio"  value="parts_js_flt_lf,0,parts_js_flt"/>	<span class="partname">parts_js_flt_lf</span></div>
+		<div></div><div class="dn">
+			[script type=text/javascript]
+			fltCreate('whatiwant','<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/news/upload/100/888_1220241470756.gif" width="96" height="160"/></a>',0,200,0,0)
+			[/script]
+		</div>
+		<div class="phold">
+			<div class="f">
+				<div class="l"><img src="http://img.china.alibaba.com/news/upload/100/888_1220241470756.gif" width="96" height="160"/></div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>浮左广告</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio"  value="parts_js_flt_rg,0,parts_js_flt"/>	<span class="partname">parts_js_flt_rg</span></div>
+		<div></div><div class="dn">			
+			[script type=text/javascript]
+			fltCreate('whatiwant','<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/news/upload/100/888_1220241470756.gif" width="96" height="160"/></a>',0,200,0,1)
+			[/script]
+		</div>
+		<div class="phold">
+			<div class="f">
+				<div class="r"><img src="http://img.china.alibaba.com/news/upload/100/888_1220241470756.gif" width="96" height="160"/></div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>浮右广告</div>
+		
+		<div class="partsel"><input class="partrad" type="radio" name="partradio"  value="parts_js_qqlst,parts_js_qqlst,parts_js_qqlst"/>	<span class="partname">parts_js_qqlst</span></div>
+		<div></div><div class="phold">
+			<div class="f">
+				<link href="http://www.51edu.com/zt/parts/parts_js_qqlst.css" type=text/css rel=stylesheet />
+				<script type="text/javascript" src="http://www.51edu.com/zt/parts/parts_js_qqlst.js" ></script>
+				<ul id="myqq" class="qq">
+				<li><div class="qqt"><a href="javascript:void(0)">title1</a></div><div class="qqc"><a href="javascript:void(0)">01.win in china</a><a href="javascript:void(0)">02.my alibaba</a><a href="javascript:void(0)">03.oh my god</a></div></li>
+				<li><div class="qqt"><a href="javascript:void(0)">title2</a></div><div class="qqc"><a href="javascript:void(0)">01.win in china</a><a href="javascript:void(0)">02.my alibaba</a><a href="javascript:void(0)">03.oh my god</a></div></li>
+				<li><div class="qqt"><a href="javascript:void(0)">title3</a></div><div class="qqc"><a href="javascript:void(0)">01.win in china</a><a href="javascript:void(0)">02.my alibaba</a><a href="javascript:void(0)">03.oh my god</a></div></li>
+				<li><div class="qqt"><a href="javascript:void(0)">title4</a></div><div class="qqc"><a href="javascript:void(0)">01.win in china</a><a href="javascript:void(0)">02.my alibaba</a><a href="javascript:void(0)">03.oh my god</a></div></li>
+				</ul>
+				<div class="dn">[script type="text/javascript"]			
+				qqInitialize(0)
+				[/script]</div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>qq菜单 <br /><b>宽度：</b>&gt;=232px</div>
+
+		<div class="partsel"><input class="partrad" type="radio" name="partradio"  value="parts_js_swrank,parts_js_swrank,parts_js_swrank"/>	<span class="partname">parts_js_swrank</span></div>
+		<div></div><div class="phold">
+			<div class="f">
+				<link href="http://www.51edu.com/zt/parts/parts_js_swrank.css" type=text/css rel=stylesheet />
+				<script type="text/javascript" src="http://www.51edu.com/zt/parts/parts_js_swrank.js" ></script>
+				<ul id="rank_1" class="swrank">               
+				<li><div class="rk n_1"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/s/u/s/a/7e8f2e34b46038c83364e2937bb13ac6.gif" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">全程助力</a></b><p><span>点击：</span>3630051次</p>	
+				</li>				
+				<li><div class="rk n_2"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/w/w/w/i/006944fb787d3f4662bf32070e75b8c1.gif" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">单身男女</a></b><p><span>点击：</span>1128162次</p>	
+				</li>
+				<li><div class="rk n_3"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/c/o/l/o/7e0c9fa89bf375086471f460ed765970.jpg" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">相亲男女</a></b><p><span>点击：</span>1103787次</p>	
+				</li>
+				<li><div class="rk n_4"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/t/r/g/x/5de273786716426c39d88e937f9182de.jpg" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">抗震救灾</a></b><p><span>点击：</span>829433次</p>	
+				</li>
+				<li><div class="rk n_5"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/n/b/m/a/1f4b7a371969cbdc3095bf7a9f0fd092.jpg" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">女人精</a></b><p><span>点击：</span>347856次</p>	
+				</li>
+				<li><div class="rk n_6"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/a/n/t/h/d8f46fb5173241d94cd71c89c0b6c69c.jpg" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">企业管理</a></b><p><span>点击：</span>307829次</p>	
+				</li>
+				<li><div class="rk n_7"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/n/b/m/a/b942dac2011bb1bb51890d39c9d6c6ee.jpg" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">男人邦</a></b><p><span>点击：</span>260945次</p>	
+				</li>
+				<li><div class="rk n_8"></div>
+					<a href="javascript:void(0)"><img src="http://img.china.alibaba.com/blog/quan/n/b/m/a/c8b71374e3be34ebd9788fa38544c7c3.jpg" width="64" height="64" align="left"/></a>		
+					<b><a href="javascript:void(0)">草根创业联盟</a></b><p><span>点击：</span>110887次</p>	
+				</li>
+				</ul>
+				<div class="dn">[script type="text/javascript"]				
+				rkswInitializeById('rank_1',1)
+				[/script]</div>
+			</div>			
+		</div>
+		<div class="descrpt"><b>描述：</b>排行焦点切换列表 <br /><b>宽度：</b>&gt;=232px</div>
+
+	</div>
+	<div class="c"></div>
+
+</div>
+</div>
+</div>
+
+</form>
+
+<div class="tc partconfirm">
+	<input id="insertConfirm" type="button" disabled value="确认" onclick="parentInsertCont();" /> <input type="button" value="关闭" onclick="parentCloseMe()" /> 
+</div>
+
+</body>
+</html>

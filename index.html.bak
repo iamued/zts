@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>精品学习网 专题制作工具 </title>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta content=editplus name=generator>
+<meta content=balibell name=author>
+
+<STYLE type=text/css>
+@import url( http://style.china.alibaba.com/css/blog/antku/alicn_bb_v0.3.css?t=038241 );
+@import url(http://style.china.alibaba.com/css/blog/antku/antcom.css?t=0708241);
+</STYLE>
+<script src="js/base.js?t=233" type=text/javascript></script>
+<BASE target=_blank></head>
+<body>
+
+<div id="ant_linkscript">
+<style id="fixed" type="text/css"></style>
+<script src="js/antku.js" type=text/javascript></script>
+<link rel="stylesheet" rev="stylesheet" href="css/tube_v0.3.css?t=073241?t=323"  type="text/css" media="screen" />
+<link id="skincss" rel="stylesheet" rev="stylesheet" href="http://style.china.alibaba.com/css/blog/antku/skin/skin_1.css" name="http://img.china.alibaba.com/images/abc/skin/skin_1.gif" type="text/css" media="screen" />
+
+</div>
+<div id="whatiwant">
+
+<div id="ant_toptoolbar" class="del"></div>
+
+<div id="layer_0" class="layer">
+	<div class="del layerctr">
+		<a onclick="deleteLayer('0');return false;" title="删除Layer_0" href="javascript:void(0)" class="btn_rmlayer">0</a><a onclick="pressMinAll(this,0);return false" href="javascript:void(0)" title="最小化/最大化" class="btn_smlayer"></a>
+	</div>	
+	<div id="a0_tube_0" class="tube col_952">
+		<div class="del ctrbar"><a onclick="showBox(this,5);return false" title="点击新增block块" href="javascript:void(0)" class="btn_addblk"></a><a href="javascript:void(0)" class="btn_qkadd" title="点击快速增加代码块" onclick="showIBox(this,2);return false;"></a></div>			
+	</div>	
+	<div class="c"></div>
+</div>
+
+<div id="layer_1" class="layer">
+	<div class="del layerctr">
+		<a onclick="deleteLayer('1');return false;" title="删除Layer_1" href="javascript:void(0)" class="btn_rmlayer">1</a><a onclick="pressMinAll(this,1);return false" href="javascript:void(0)" title="最小化/最大化" class="btn_smlayer"></a>
+	</div>
+	<table cellspacing="0" cellpadding="0" border="0" class="cutable">
+	<tbody>
+	<tr>
+	<td valign="top">
+		<div style="width: 312px;" id="a1_tube_0" class="tube">
+			<div class="del ctrbar"><a onclick="showBox(this,0);return false" title="点击新增block块" href="javascript:void(0)" class="btn_addblk"></a><a href="javascript:void(0)" class="btn_qkadd" title="点击快速增加代码块" onclick="showIBox(this,2);return false;"></a>			
+				<div class="del prbox prbox_3 dn">
+				<div class="pa"><a onclick="closeBox(this);return false" href="javascript:void(0)" class="clsb"></a><div class="c"></div><div class="tut" >单个分栏</div><a class="tuse tuse_1" href="javascript:void(0)" onclick="newBlock(this,0);return false"></a><a class="tuse tuse_2" href="javascript:void(0)" onclick="newBlock(this,1);return false"></a><a class="tuse tuse_3" href="javascript:void(0)" onclick="newBlock(this,2);return false"></a><div class="c"></div><div class="tut">多个分栏</div><a class="tuse tuse_4" href="javascript:void(0)" onclick="newBlock(this,3);return false"></a><a class="tuse tuse_5" href="javascript:void(0)" onclick="newBlock(this,4);return false"></a><div class="c"></div><div class="tut">仅内容框</div><a class="tuse tuse_6" href="javascript:void(0)" onclick="newBlock(this,5);return false"></a><a class="tuse tuse_7" href="javascript:void(0)" onclick="newBlock(this,6);return false"></a><a class="tuse tuse_8" href="javascript:void(0)" onclick="newBlock(this,7);return false"></a><div class="c"></div><div class="tut">空 白 块</div><a class="tuse tuse_9" href="javascript:void(0)" onclick="newBlock(this,10);return false"></a></div></div>			
+			</div>
+			<div class="block" id="block_43">
+				<div class="del hdpr r"><div class="ttpa"><a onclick="closeContainer(this);return false" href="javascript:void(0)" class="bar bar_x"></a><a onclick="changeVisible(this);return false" href="javascript:void(0)" class="bar bar_min"></a><a onclick="setContainer(event,this);return false" title="设置Block样式" href="javascript:void(0)" class="bar bar_set"></a><a onclick="setCode(event,this);return false" title="block块代码编辑" href="javascript:void(0)" class="del bar bar_code"></a></div></div>
+				<div class="tt tt_0" id="title_43">
+					<div class="ttl"></div>
+					<div class="icl"></div>
+					<div class="ttc"><h3 class="ant_txt">title</h3></div>
+					<div class="ttr"></div>
+					<div class="icr mr"><a href="javascript:void(0)">更多</a></div>
+				</div>
+				<div class="cont cont_0" id="cont_43">
+					<div class="cont_in" id="cont_in_43">
+						<div class="del ctrbar2"><a onclick="clearCont(this,1);return false;" href="javascript:void(0)">回退</a> | <a onclick="clearCont(this);return false;" href="javascript:void(0)">清空</a> | <a href="javascript:void(0)" onclick="showIBox(this);return false;">增加内容</a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</td>
+	<td width="8" class="cutline"></td>
+	<td valign="top">
+		<div style="width: 312px;" id="a1_tube_1" class="tube style_1_18">
+			<div class="del ctrbar"><a onclick="showBox(this,0);return false" title="点击新增block块" href="javascript:void(0)" class="btn_addblk"></a><a href="javascript:void(0)" class="btn_qkadd" title="点击快速增加代码块" onclick="showIBox(this,2);return false;"></a></div>
+			<div id="block_2" class="block">
+			<div class="del blkbar"><a href="javascript:void(0)" onclick="closeContainer(this);return false" class="del bar bar_x"></a><a href="javascript:void(0)" onclick="changeVisible(this);return false" class="del bar bar_min"></a><a href="javascript:void(0)" onclick="setContainer(event,this);return false" title="设置Block样式" class="del bar bar_set"></a><a href="javascript:void(0)" onclick="setCode(event,this);return false" title="block块代码编辑" class="del bar bar_code"></a>
+			<div class="c"></div></div>
+			<div class="box">
+			<div id="cont_in_2">
+			<div id="cont_2" class="cont cont_0">
+			<div class="del ctrbar2"><a href="javascript:void(0)" onclick="clearCont(this,1);return false;">回退</a> | <a href="javascript:void(0)" onclick="clearCont(this);return false;">清空</a> | <a href="javascript:void(0)" onclick="showIBox(this);return false;">增加内容</a></div></div></div></div></div>
+		</div>
+	</td>
+	<td width="8" class="cutline"></td>
+	<td valign="top">
+		<div style="width: 312px;" id="a1_tube_2" class="tube style_2_18">
+		<div class="del ctrbar"><a onclick="showBox(this,0);return false" title="点击新增block块" href="javascript:void(0)" class="btn_addblk"></a><a href="javascript:void(0)" class="btn_qkadd" title="点击快速增加代码块" onclick="showIBox(this,2);return false;"></a></div></div>
+	</td>	
+	</tr>
+	</tbody>
+	</table>
+</div>	
+
+	<div id="sidetoolbar" class="udel sidetoolbar"><div class="toolbartop"><a id="toolbarsw" class="barclos" href="javascript:void(0)" onclick="toolBarClick(this);return false"></a></div><div id="toolbarbody" class="toolbarbody"><a href="javascript:void(0)" onclick="addLayer($('btn_addlayer'));return false;">+ 增加层</a><A id="ant_infonotsee1" onclick="cleanPage();return false" href="javascript:void(0)">清理页面</A><a id=preview href="javascript:void(0)" onclick="if(this.innerHTML == '预览'){addPreView();clearJs();this.innerHTML='还原'}else{delPreView();restoreJs();this.innerHTML='预览'};return false;" title="按 ~ 键可以预览！">预览</a><!--a id="ant_infonotsee2" href="javascript:void(0)" onclick="try{outputHTML()}catch(e){};return false;">中途代码</a--><a href="javascript:void(0)" onclick="try{outputHTML(1)}catch(e){};return false;">最终代码</a></div><div class="toolbarbot"></div></div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="js/antku_ini.js?t=333"></script>
+<div class="tc dn"><script language="javascript" src="http://count30.51yes.com/click.aspx?id=309075959&logo=1"></script></div>
+
+
+<div id="ant_info" ></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7440714-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
